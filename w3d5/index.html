@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Week3Day5</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+
+  
+  <body>
+
+    <!-- NAV BAR=================================== -->
+    <nav class="navbar navbar-expand-lg mynavbar">
+      <a class="navbar-brand brand" href="#">ATTAINU</a>
+      <button class="navbar-toggler menu-button my-menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <h1 id="menu">MENU</h1>
+        <div class="hamburger">
+          <svg _ngcontent-serverapp-c81="" class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="white" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        </div>
+      </button>
+    
+       <!--COLLAPSE NAV BAR MOBILE  -->
+    
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mynavitems">
+          <li class="nav-item active click ">
+            <a class="nav-link mynavitem portfolio-button" href="#portfolio">PORTFOLIO<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mynavitem" href="#about">ABOUT<span class="sr-only">(current)</span></a>
+          </li> <li class="nav-item active">
+            <a class="nav-link mynavitem contact-button" href="#contact">CONTACT<span class="sr-only">(current)</span></a>
+          </li>
+      </div>
+    </nav>
+    <!-- HERO SECTION=========================================-->
+    <div class="container-fluid justify-content-center my-hero-container">
+      
+        <div class="row">
+          <div class="col-12 mb-3  avatar-wrapper">
+            <img class="avatar" src="./images/avataaars.svg" alt="oops can't display image"></div><br>
+            <div class="col-12 mb-3 ">
+             <h1 class="my-name">VINAYAK NARAYANKAR</h1>
+            </div><br>
+
+            <!-- THIS IS MY LINE BREAK -->
+            <div class=" col-12 mb-3  horizontal-line">
+              <div class="line1"></div><br>
+              <i class="fa fa-star star-icon"></i><br>
+              <div class="line2"></div>
+            </div><br>
+          
+          
+            <div class="col-12 mb-3  hero-text">Tech Enthusiast-Amatuer Web Developer-Night Owl</div><br>
+          
+        </div>
+    </div>
+    <div id="portfolio"></div>
+        
+        <!-- MY PORTFOLIO SECTION=========================================================================== -->
+        
+        <div class="container-fluid justify-content-center portfolio-container">
+          <!-- SECTION HEADING -->
+          <div class="row">
+            <h1 class="col-12 mb-3 my-portfolio-heading">PORTFOLIO</h1>
+          </div>
+          <div id="portfolio"></div>
+          <!-- LINE BREAK -->
+          <div class="row">
+            <div class=" col-12 mb-3  horizontal-line">
+              <div class="line1 portfolio-line"></div>
+              <i class="fa fa-star star-icon portfolio-star"></i>
+              <div class="line2 portfolio-line"></div>
+            </div><br>
+          </div>
+          <!-- IMAGE CONTAINER -->
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9 img-row">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-3 col-lg-3 img-container">
+                  <a href="#cabin"
+                  data-toggle="modal" data-target="#cabin">
+                    <img class="img" src="./images/cabin.png" alt="Can't Display Img">
+                  </a>
+                </div>
+                <div class="col-10 col-md-3  col-lg-3   img-container">
+                  <a href="#cake"
+                  data-toggle="modal" data-target="#cake">
+                    <img class="img" src="./images/cake.png" alt="Can't Display Img">
+                  </a>
+                </div>
+                <div class="col-10 col-md-3  col-lg-3 img-container">
+                 <a href="#circus"
+                 data-toggle="modal" data-target="#circus">
+                  <img class="img" src="./images/circus.png" alt="Can't Display Img">
+                 </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-10 col-lg-9 img-row-2">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-3 col-lg-3  img-container">
+                  <a href="#game"
+                  data-toggle="modal" data-target="#game">
+                    <img class="img" src="./images/game.png" alt="Can't Display Img">
+                  </a>
+                </div>
+                <div class="col-10 col-md-3  col-lg-3   img-container">
+                 <a href="#safe"
+                 data-toggle="modal" data-target="#safe">
+                  <img class="img" src="./images/safe.png" alt="Can't Display Img">
+                 </a>
+                </div>
+                <div class="col-10 col-md-3  col-lg-3  img-container">
+                  <a href="#submarine"
+                  data-toggle="modal" data-target="#submarine">
+                    <img class="img" src="./images/submarine.png" alt="Can't Display Img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+      
+  </div>
+
+
+  <!-- MODAL FOR CABIN ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="modal modal fade " id="cabin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog my-modal-box " role="document">
+      <button class="close" data-dismiss="modal" aria-label="Close">
+      <i class="fa fa-times close-icon"></i>
+      </button>
+      
+      <div class="row">
+        <h1 class="col-12 mb-3 my-portfolio-heading">CABIN</h1>
+      </div>
+
+      <div class="row">
+        <div class=" col-12 mb-3  horizontal-line">
+          <div class="line1 portfolio-line"></div>
+          <i class="fa fa-star star-icon portfolio-star"></i>
+          <div class="line2 portfolio-line"></div>
+        </div><br>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8 modal-img-container">
+          <img class="img" src="./images/cabin.png" alt="Can't Display Img">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 modal-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus excepturi magni odit quo quia placeat porro et commodi suscipit similique nam labore, delectus doloremque non. Labore porro expedita deleniti velit repellat doloribus. Quam laborum repellat corporis optio minima quod quos!
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <a href="#">
+          <div class="  close-button">
+            <i class="fa fa-times close-icon-s"></i>
+            <h1 class="close-modal">Close Window</h1>
+          </div>
+        </a>
+       </div>
+
+    </div>
+  </div>
+  
+
+  <!-- MODAL FOR CAKE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="modal modal fade " id="cake" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog my-modal-box " role="document">
+      <button class="close" data-dismiss="modal" aria-label="Close">
+      <i class="fa fa-times close-icon"></i>
+      </button>
+      
+      <div class="row">
+        <h1 class="col-12 mb-3 my-portfolio-heading">CAKE</h1>
+      </div>
+
+      <div class="row">
+        <div class=" col-12 mb-3  horizontal-line">
+          <div class="line1 portfolio-line"></div>
+          <i class="fa fa-star star-icon portfolio-star"></i>
+          <div class="line2 portfolio-line"></div>
+        </div><br>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8 modal-img-container">
+          <img class="img" src="./images/cake.png" alt="Can't Display Img">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 modal-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus excepturi magni odit quo quia placeat porro et commodi suscipit similique nam labore, delectus doloremque non. Labore porro expedita deleniti velit repellat doloribus. Quam laborum repellat corporis optio minima quod quos!
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <a href="#">
+          <div class="  close-button">
+            <i class="fa fa-times close-icon-s"></i>
+            <h1 class="close-modal">Close Window</h1>
+          </div>
+        </a>
+       </div>
+
+    </div>
+  </div>
+    
+
+  <!-- MODAL FOR CIRCUS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="modal modal fade " id="circus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog my-modal-box " role="document">
+      <button class="close" data-dismiss="modal" aria-label="Close">
+      <i class="fa fa-times close-icon"></i>
+      </button>
+      
+      <div class="row">
+        <h1 class="col-12 mb-3 my-portfolio-heading">CIRCUS</h1>
+      </div>
+
+      <div class="row">
+        <div class=" col-12 mb-3  horizontal-line">
+          <div class="line1 portfolio-line"></div>
+          <i class="fa fa-star star-icon portfolio-star"></i>
+          <div class="line2 portfolio-line"></div>
+        </div><br>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8 modal-img-container">
+          <img class="img" src="./images/circus.png" alt="Can't Display Img">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 modal-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus excepturi magni odit quo quia placeat porro et commodi suscipit similique nam labore, delectus doloremque non. Labore porro expedita deleniti velit repellat doloribus. Quam laborum repellat corporis optio minima quod quos!
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <a href="#">
+          <div class="  close-button">
+            <i class="fa fa-times close-icon-s"></i>
+            <h1 class="close-modal">Close Window</h1>
+          </div>
+        </a>
+       </div>
+
+    </div>
+  </div>
+      
+   <!-- MODAL FOR game ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="modal modal fade " id="game" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog my-modal-box " role="document">
+      <button class="close" data-dismiss="modal" aria-label="Close">
+      <i class="fa fa-times close-icon"></i>
+      </button>
+      
+      <div class="row">
+        <h1 class="col-12 mb-3 my-portfolio-heading">GAME</h1>
+      </div>
+
+      <div class="row">
+        <div class=" col-12 mb-3  horizontal-line">
+          <div class="line1 portfolio-line"></div>
+          <i class="fa fa-star star-icon portfolio-star"></i>
+          <div class="line2 portfolio-line"></div>
+        </div><br>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8 modal-img-container">
+          <img class="img" src="./images/game.png" alt="Can't Display Img">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 modal-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus excepturi magni odit quo quia placeat porro et commodi suscipit similique nam labore, delectus doloremque non. Labore porro expedita deleniti velit repellat doloribus. Quam laborum repellat corporis optio minima quod quos!
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <a href="#">
+          <div class="  close-button">
+            <i class="fa fa-times close-icon-s"></i>
+            <h1 class="close-modal">Close Window</h1>
+          </div>
+        </a>
+       </div>
+
+    </div>
+  </div>   
+          
+  
+  <!-- MODAL FOR safe ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="modal modal fade " id="safe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog my-modal-box " role="document">
+      <button class="close" data-dismiss="modal" aria-label="Close">
+      <i class="fa fa-times close-icon"></i>
+      </button>
+      
+      <div class="row">
+        <h1 class="col-12 mb-3 my-portfolio-heading">SAFE</h1>
+      </div>
+
+      <div class="row">
+        <div class=" col-12 mb-3  horizontal-line">
+          <div class="line1 portfolio-line"></div>
+          <i class="fa fa-star star-icon portfolio-star"></i>
+          <div class="line2 portfolio-line"></div>
+        </div><br>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8 modal-img-container">
+          <img class="img" src="./images/safe.png" alt="Can't Display Img">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 modal-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus excepturi magni odit quo quia placeat porro et commodi suscipit similique nam labore, delectus doloremque non. Labore porro expedita deleniti velit repellat doloribus. Quam laborum repellat corporis optio minima quod quos!
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <a href="#">
+          <div class="  close-button">
+            <i class="fa fa-times close-icon-s"></i>
+            <h1 class="close-modal">Close Window</h1>
+          </div>
+        </a>
+       </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL FOR submarine ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="modal modal fade " id="submarine" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog my-modal-box " role="document">
+      <button class="close" data-dismiss="modal" aria-label="Close">
+      <i class="fa fa-times close-icon"></i>
+      </button>
+      
+      <div class="row">
+        <h1 class="col-12 mb-3 my-portfolio-heading">SUBMARINE</h1>
+      </div>
+
+      <div class="row">
+        <div class=" col-12 mb-3  horizontal-line">
+          <div class="line1 portfolio-line"></div>
+          <i class="fa fa-star star-icon portfolio-star"></i>
+          <div class="line2 portfolio-line"></div>
+        </div><br>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8 modal-img-container">
+          <img class="img" src="./images/submarine.png" alt="Can't Display Img">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-10 modal-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus excepturi magni odit quo quia placeat porro et commodi suscipit similique nam labore, delectus doloremque non. Labore porro expedita deleniti velit repellat doloribus. Quam laborum repellat corporis optio minima quod quos!
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <a href="#">
+          <div class="  close-button">
+            <i class="fa fa-times close-icon-s"></i>
+            <h1 class="close-modal">Close Window</h1>
+          </div>
+        </a>
+       </div>
+
+    </div>
+  </div>
+
+
+ 
+<div id="about"></div>
+
+
+
+
+    <!-- MY ABOUT SECTION ==================================================================== -->
+
+    <div class="container-fluid justify-content-center  about-container">
+      <!-- SECTION HEADING -->
+      <div class="row">
+        <h1 class="col-12 mb-3 my-about-heading">ABOUT</h1>
+      </div>
+
+     
+
+       <!-- LINE BREAK -->
+     <div class="row justify-content-center">
+       <div class=" col-12 mb-3  horizontal-line">
+         <div class="line1 about-line"></div>
+         <i class="fa fa-star star-icon about-star"></i>
+         <div class="line2 about-line"></div>
+       </div><br>
+     </div>
+
+      <!-- TEXT AREA -->
+     <div class="row justify-content-center text-row">
+       <div class="col-10 col-md-4 col-lg-3 about-text">I am a type of guy who likes staring at screens for hours, mostly playing games on it. So as a career I wanted to pursue something I love to do. And Coding is one of those things.</div>
+
+       <div class="col-10 col-md-4 col-lg-3 about-text">I have used BOOTSTRAP frame-work to complete this Assignment. I am new to this field and I want to learn to build sites like this without any templates and style-guides completely on my own.</div>
+     </div>
+
+     <!-- DOWNLOAD BUTTON -->
+     <div class="row justify-content-center">
+      <a href="#">
+        <div class=" d-lg-none download-button">
+          <i class="fa fa-download"></i>
+          <h1 class="download">Free Download!</h1>
+        </div>
+      </a>
+     </div>
+    </div>
+     
+    <!-- MY CONTACT SECTION ========================================================== -->
+    <div id="contact"></div>
+
+    <div class="container-fluid justify-content-center contact-container">
+      <!-- SECTION HEADING -->
+      <div class="row">
+        <h1 class="col-12 mb-3 my-portfolio-heading">CONTACT ME</h1>
+      </div>
+      
+      <!-- LINE BREAK -->
+      <div class="row">
+        <div class=" col-12 mb-3  horizontal-line">
+          <div class="line1 portfolio-line"></div>
+          <i class="fa fa-star star-icon portfolio-star"></i>
+          <div class="line2 portfolio-line"></div>
+        </div><br>
+      </div>
+
+      <!-- CONTACT FORM FOR MOBILE========================================================== -->
+
+      <!-- NAME FIELD -->
+    <div class="form-row justify-content-center text-left row-form">
+        <div class="col-10 d-lg-none mb-3 form-box ">
+          <input type="text" required placeholder="Name" class="form-control " id="validationServer03" required>
+          <div class="invalid-feedback">
+            Please enter your name.
+          </div>
+        </div>
+    </div>
+      <!-- EMAIL FIELD -->
+    <div class="form-row justify-content-center row-form">
+      <div class="col-10 d-lg-none mb-3 form-box ">
+        <input type="email" required placeholder="Email Address" class="form-control " id="validationServer03" required>
+        <div class="invalid-feedback">
+          Please enter your email.
+        </div>
+      </div>
+    </div>
+      <!-- PHONE NUMBER -->
+    <div class="form-row justify-content-center row-form">
+      <div class="col-10 d-lg-none mb-3 form-box ">
+        <input type="number" required placeholder="Phone Number" class="form-control " id="validationServer03" required>
+        <div class="invalid-feedback">
+          Please enter your phone number
+        </div>
+      </div>
+    </div>
+      <!-- TEXT AREA -->
+    <div class="row d-lg-none justify-content-center">
+      <div class=" col-10 form-group form-box">
+        <textarea class="form-control " placeholder="Message"  id="exampleFormControlTextarea1" rows="5"></textarea>
+      </div>
+    </div>
+        <!-- SEND BUTTON -->
+    <div class="row justify-content-start">
+      <button type="submit" class=" d-lg-none btn btn-primary submit-button ">Send</button>   
+    </div>   
+
+    <!-- CONTACT SECTION FO LARGE SCREENS -->
+
+    <div class="row d-none d-lg-block">
+      <div class="row justify-content-center">
+        <div class="col-2 icon-container">
+            <div class="row justify-content-center ">
+              <div class="col-5 small-img-container">
+                <img src="./images/mobile.svg" class="mobile-img" alt="">
+              </div>
+            </div>
+            <div class="row m-2 justify-content-center">
+              <p class="contact-label">Phone</p>
+            </div>
+            <div class="row m-2 justify-content-center">
+              <p class="phone-number">(+91) 8722449306</p>
+            </div>  
+        </div>
+        <div class="col-2 icon-container">
+          <div class="row justify-content-center ">
+            <div class="col-5 small-img-container">
+              <img class="mobile-img" src="./images/mail.svg" alt="">
+            </div>
+          </div>
+          <div class="row m-2 justify-content-center">
+            <p class="contact-label">Email</p>
+          </div>
+          <div class="row m-2 justify-content-center">
+            <a href=""><p class="email">nlsvinayak@gmail.com</p></a>
+          </div> 
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- MY FOOTER SECTION ================================================================================== -->
+    
+     <footer class="container-fluid justify-content-center">
+
+       <div class="row justify-content-center ">
+         <div class="col-10 col-lg-3 footer-container location ">
+           <h1 class="footer-heading">LOCATION</h1>
+           <p class="footer-text-1">Local:5500, Some-where on the Internet. IP: 120.0.0.1</p>
+           
+         </div>
+
+         <div class="col-10 col-lg-6 footer-container around">
+           <h1 class="footer-heading">AROUND THE WEB</h1>
+           <div class="row">
+            <a href=""><div class="footer-img-container">
+              <img src="./images/linkedin.svg" alt="" class="img-f">
+            </div></a>
+            <a href=""><div class="footer-img-container">
+              <img src="./images/facebook.svg" alt="" class="img-f">  
+            </div></a>
+            <a href=""><div class="footer-img-container">
+              <img src="./images/twitter.svg" alt="" class="img-f">
+            </div></a>
+            <a href=""><div class="footer-img-container">
+              <img src="./images/dribbble.svg" alt="" class="img-f">
+            </div></a>
+           </div>
+         </div>
+
+
+         <div class="col-10 col-lg-3 footer-container attainu">
+          <h1 class="footer-heading">ABOUT ATTAINU</h1>
+          <p class="footer-text-2">An online education platform where Full Stack Web Development is taught within 7 months. </p>
+        </div>
+       </div>
+
+       <div class="row copyright-c">
+         <h1 class="copyright">&copy;Vinayak Narayankar. 2020</h1>
+         <div class="up-button">
+          <a class="up-icon-a" href=""><i class="fa fa-angle-up up-icon"></i></a>
+         </div>
+       </div>
+
+
+
+    </footer>
+
+         
+
+    
+        
+           
+        
+        
+    
+ 
+
+
+
+    <!-- SCRIPTS FOR BOOTSTRAP======================================================================================== -->
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
+
