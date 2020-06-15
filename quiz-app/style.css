@@ -1,0 +1,257 @@
+@font-face {
+  font-family: bungeeshade;
+  src: url(./font/BungeeShade.ttf);
+  font-style: normal;
+  font-weight: bolder;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  background: rgba(0, 0, 255, 0.144);
+  font-family: "bungeeshade";
+}
+h1 {
+  font-size: 4rem;
+  font-family: "bungeeshade";
+  line-height: 90px;
+  text-align: center;
+  display: block;
+  color: white;
+}
+#h1-container {
+  background: #333;
+}
+header + h3 {
+  font-family: montserrat;
+  font-size: 1rem;
+}
+#main {
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#question-section {
+  width: 40%;
+  height: 400px;
+}
+
+#timer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "bungeeshade";
+  margin-bottom: 10px;
+  width: 40%;
+  height: 400px;
+
+  border-radius: 5px;
+  background: rgba(51, 51, 51, 0);
+}
+.border-blink {
+  border: 3px solid black;
+}
+#seconds {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 10rem;
+  display: block;
+  width: 100%;
+  height: 0px;
+}
+.start {
+  cursor: pointer;
+}
+#seconds + div {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#answer-input {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#answer-input:focus {
+  outline: none;
+}
+#answer-input::placeholder {
+  font-family: montserrat;
+}
+
+#question-heading {
+  color: #333;
+
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+#footer-container {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background: #333;
+  font-family: montserrat;
+  height: 60px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+#question-div {
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: montserrat;
+}
+#question-div > p {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+#submit-button {
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  background: #333;
+  color: white;
+  color: #dadaff;
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.349);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal {
+  background: #dadaff;
+  width: 30%;
+  height: 50%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(32, 187, 32);
+  font-size: 6rem;
+}
+
+.modal-time-up {
+  text-align: center;
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 3rem;
+  color: red;
+}
+
+.modal-time-up > #answered {
+  color: rgb(32, 187, 32);
+  font-size: 1.5rem;
+}
+
+#again {
+  margin: 20px;
+  width: 200px;
+  padding: 10px;
+  font-family: montserrat;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: rgb(77, 77, 230);
+}
+
+.visibility-toggle {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 60px;
+  }
+
+  #main {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #question-section {
+    width: 100%;
+    height: 300px;
+  }
+
+  #timer-section {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  #seconds {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  #question-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  #question-div {
+    font-size: 1.3rem;
+  }
+
+  #seconds + div {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+  #footer-container {
+    height: 20px;
+  }
+
+  .modal {
+    width: 90%;
+  }
+}

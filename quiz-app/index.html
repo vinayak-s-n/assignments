@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- My header -->
+    <header id="h1-container">
+      <h1>What-iz...?</h1>
+    </header>
+
+    <!-- My main section -->
+    <main id="main">
+      <!-- question section -->
+      <section id="question-section">
+        <h3 id="question-heading">Question</h3>
+        <!-- Here displays my question -->
+        <h3 id="question-div"><p></p></h3>
+        <!-- User input answers here -->
+        <input
+          id="answer-input"
+          type="text"
+          placeholder="Type Your Answer Here"
+          disabled
+        />
+        <!-- SUbmit answer button -->
+        <button id="submit-button" disabled>Submit</button>
+      </section>
+      <!-- THis is my huge timer -->
+      <section id="timer-section" class="border-blink">
+        <div id="seconds">
+          <i id="play-button" class="fa fa-play start"></i>
+        </div>
+        <div>
+          <p class="start" id="start-button">Start</p>
+          <p style="display: none;" id="p-second" class="visibility-toggle">
+            Seconds...
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- My footer -->
+    <footer id="footer-container">
+      <small>Made With Love &copy;Vinayak Narayankar</small>
+    </footer>
+    <!-- my modal  -->
+    <div class="modal-bg">
+      <div class="modal modal-time-up">
+        <p>Time's Up</p>
+        <p id="answered"></p>
+        <button id="again">Play Again</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
