@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     get();
     countTimer();
     submitButton.removeAttribute("disabled");
+    submitButton.style.cursor = "pointer";
     userInput.removeAttribute("disabled");
     document.querySelector("#start-button").style.display = "none";
     document.querySelector("#play-button").style.display = "none";
